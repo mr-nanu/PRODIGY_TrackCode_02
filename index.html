@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stopwatch Web Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Stopwatch Web Application</h1>
+        <p class="subtitle">A modern, precise stopwatch for tech professionals.</p>
+    </header>
+    <main>
+        <div class="stopwatch-layout">
+            <div class="stopwatch-container">
+                <div class="time-display" id="display">00:00:00.00</div>
+                <div class="controls">
+                    <button id="startBtn">Start</button>
+                    <button id="pauseBtn" disabled>Pause</button>
+                    <button id="resetBtn" disabled>Reset</button>
+                    <button id="lapBtn" disabled>Lap</button>
+                </div>
+                <div class="laps" id="laps">
+                    <h3>Laps</h3>
+                    <ul id="lapsList"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="stopwatch.js"></script>
+</body>
+</html>
